@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+   <metadata minClientVersion="2.8.1">
+       <id>kphillpotts.Lamp.Plugin</id>
+       <version>1.0.0.0</version>
+       <title>Lamp Plugin for Xamarin</title>
+       <authors>Kym Phillpotts</authors>
+       <owners>Kym Phillpotts</owners>
+       <licenseUrl>https://github.com/kphillpotts/Xamarin.Plugins/blob/master/LICENSE.md</licenseUrl>
+       <projectUrl>https://github.com/kphillpotts/Xamarin.Plugins</projectUrl>
+       <requireLicenseAcceptance>false</requireLicenseAcceptance>
+       <description>
+         Cross platform access to that LED on the back of your phone.
+       </description>
+       <summary>Cross platform access to that LED on the back of your phone.</summary>
+       <tags>xamarin, pcl, xam.pcl, settings, windows phone, winphone, wp8, winrt, android, xamarin.forms, ios</tags>
+       <dependencies>
+       </dependencies>
+   </metadata>
+   <files>
+<!--Core-->
+     <file src="Lamp\Lamp.Plugin\bin\Release\Lamp.Plugin.dll" target="lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Lamp.Plugin.dll" />
+     <file src="Lamp\Lamp.Plugin\bin\Release\Lamp.Plugin.xml" target="lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Lamp.Plugin.xml" />
+     <file src="Lamp\Lamp.Plugin\bin\Release\Lamp.Plugin.pdb" target="lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Lamp.Plugin.pdb" />
+     <file src="Lamp\Lamp.Plugin.Abstractions\bin\Release\Lamp.Plugin.Abstractions.dll" target="lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Lamp.Plugin.Abstractions.dll" />
+     <file src="Lamp\Lamp.Plugin.Abstractions\bin\Release\Lamp.Plugin.Abstractions.xml" target="lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Lamp.Plugin.Abstractions.xml" />
+     <file src="Lamp\Lamp.Plugin.Abstractions\bin\Release\Lamp.Plugin.Abstractions.pdb" target="lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Lamp.Plugin.Abstractions.pdb" />
+
+     <!--Win Phone Silverlight-->
+     <file src="Lamp\Lamp.Plugin.WindowsPhone8\bin\Release\Lamp.Plugin.dll" target="lib\wp8\Lamp.Plugin.dll" />
+     <file src="Lamp\Lamp.Plugin.WindowsPhone8\bin\Release\Lamp.Plugin.xml" target="lib\wp8\Lamp.Plugin.xml" />
+     <file src="Lamp\Lamp.Plugin.WindowsPhone8\bin\Release\Lamp.Plugin.pdb" target="lib\wp8\Lamp.Plugin.pdb" />
+     <file src="Lamp\Lamp.Plugin.Abstractions\bin\Release\Lamp.Plugin.Abstractions.dll" target="lib\wp8\Lamp.Plugin.Abstractions.dll" />
+     <file src="Lamp\Lamp.Plugin.Abstractions\bin\Release\Lamp.Plugin.Abstractions.xml" target="lib\wp8\Lamp.Plugin.Abstractions.xml" />
+     <file src="Lamp\Lamp.Plugin.Abstractions\bin\Release\Lamp.Plugin.Abstractions.pdb" target="lib\wp8\Lamp.Plugin.Abstractions.pdb" />
+
+     <!--Win Phone 81-->
+     <file src="Lamp\Lamp.Plugin.WindowsPhone81\bin\Release\Lamp.Plugin.dll" target="lib\wpa81\Lamp.Plugin.dll" />
+     <file src="Lamp\Lamp.Plugin.WindowsPhone81\bin\Release\Lamp.Plugin.xml" target="lib\wpa81\Lamp.Plugin.xml" />
+     <file src="Lamp\Lamp.Plugin.WindowsPhone81\bin\Release\Lamp.Plugin.pdb" target="lib\wpa81\Lamp.Plugin.pdb" />
+     <file src="Lamp\Lamp.Plugin.Abstractions\bin\Release\Lamp.Plugin.Abstractions.dll" target="lib\wpa81\Lamp.Plugin.Abstractions.dll" />
+     <file src="Lamp\Lamp.Plugin.Abstractions\bin\Release\Lamp.Plugin.Abstractions.xml" target="lib\wpa81\Lamp.Plugin.Abstractions.xml" />
+     <file src="Lamp\Lamp.Plugin.Abstractions\bin\Release\Lamp.Plugin.Abstractions.pdb" target="lib\wpa81\Lamp.Plugin.Abstractions.pdb" />
+
+
+     <!--WinStore-->
+     <file src="Lamp\Lamp.Plugin.WindowsStore\bin\Release\Lamp.Plugin.dll" target="lib\win8\Lamp.Plugin.dll" />
+     <file src="Lamp\Lamp.Plugin.WindowsStore\bin\Release\Lamp.Plugin.xml" target="lib\win8\Lamp.Plugin.xml" />
+     <file src="Lamp\Lamp.Plugin.WindowsStore\bin\Release\Lamp.Plugin.pdb" target="lib\win8\Lamp.Plugin.pdb" />
+     <file src="Lamp\Lamp.Plugin.Abstractions\bin\Release\Lamp.Plugin.Abstractions.dll" target="lib\win8\Lamp.Plugin.Abstractions.dll" />
+     <file src="Lamp\Lamp.Plugin.Abstractions\bin\Release\Lamp.Plugin.Abstractions.xml" target="lib\win8\Lamp.Plugin.Abstractions.xml" />
+     <file src="Lamp\Lamp.Plugin.Abstractions\bin\Release\Lamp.Plugin.Abstractions.pdb" target="lib\win8\Lamp.Plugin.Abstractions.pdb" />
+
+
+     <!--Xamarin.Android-->
+     <file src="Lamp\Lamp.Plugin.Android\bin\Release\Lamp.Plugin.dll" target="lib\MonoAndroid10\Lamp.Plugin.dll" />
+     <file src="Lamp\Lamp.Plugin.Android\bin\Release\Lamp.Plugin.xml" target="lib\MonoAndroid10\Lamp.Plugin.xml" />
+     <file src="Lamp\Lamp.Plugin.Android\bin\Release\Lamp.Plugin.pdb" target="lib\MonoAndroid10\Lamp.Plugin.pdb" />
+     <file src="Lamp\Lamp.Plugin.Abstractions\bin\Release\Lamp.Plugin.Abstractions.dll" target="lib\MonoAndroid10\Lamp.Plugin.Abstractions.dll" />
+     <file src="Lamp\Lamp.Plugin.Abstractions\bin\Release\Lamp.Plugin.Abstractions.xml" target="lib\MonoAndroid10\Lamp.Plugin.Abstractions.xml" />
+     <file src="Lamp\Lamp.Plugin.Abstractions\bin\Release\Lamp.Plugin.Abstractions.pdb" target="lib\MonoAndroid10\Lamp.Plugin.Abstractions.pdb" />
+
+     <!--Xamarin.iOS-->
+     <file src="Lamp\Lamp.Plugin.iOS\bin\iPhone\Release\Lamp.Plugin.dll" target="lib\MonoTouch10\Lamp.Plugin.dll" />
+     <file src="Lamp\Lamp.Plugin.iOS\bin\iPhone\Release\Lamp.Plugin.xml" target="lib\MonoTouch10\Lamp.Plugin.xml" />
+     <file src="Lamp\Lamp.Plugin.Abstractions\bin\Release\Lamp.Plugin.Abstractions.dll" target="lib\MonoTouch10\Lamp.Plugin.Abstractions.dll" />
+     <file src="Lamp\Lamp.Plugin.Abstractions\bin\Release\Lamp.Plugin.Abstractions.xml" target="lib\MonoTouch10\Lamp.Plugin.Abstractions.xml" />
+     
+     <!--Xamarin.iOS Unified-->
+     <file src="Lamp\Lamp.Plugin.iOSUnified\bin\iPhone\Release\Lamp.Plugin.dll" target="lib\Xamarin.iOS10\Lamp.Plugin.dll" />
+     <file src="Lamp\Lamp.Plugin.iOSUnified\bin\iPhone\Release\Lamp.Plugin.xml" target="lib\Xamarin.iOS10\Lamp.Plugin.xml" />
+     <file src="Lamp\Lamp.Plugin.Abstractions\bin\Release\Lamp.Plugin.Abstractions.dll" target="lib\Xamarin.iOS10\Lamp.Plugin.Abstractions.dll" />
+     <file src="Lamp\Lamp.Plugin.Abstractions\bin\Release\Lamp.Plugin.Abstractions.xml" target="lib\Xamarin.iOS10\Lamp.Plugin.Abstractions.xml" />
+
+
+
+   </files>
+</package>
