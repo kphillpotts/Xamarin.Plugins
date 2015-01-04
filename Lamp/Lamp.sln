@@ -22,6 +22,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{99B796FB-92BB-4F12-AB96-CFABD9ED7BC3}"
 	ProjectSection(SolutionItems) = preProject
 		Lamp.Plugin.nuspec = Lamp.Plugin.nuspec
+		Lamp_nuget_icon.png = Lamp_nuget_icon.png
 		README.md = README.md
 	EndProjectSection
 EndProject
