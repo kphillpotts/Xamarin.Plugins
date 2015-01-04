@@ -5,7 +5,7 @@ Cross platform xamarin and windows plugins for PCLs
 
 # Current Plugins for Xamarin
 Each plugin has a README with more infomration on what they contain
-* **[Lamp](https://github.com/kphillpotts/Xamarin.Plugins/tree/master/Lamp)**
+* **[Lamp](https://github.com/kphillpotts/Xamarin.Plugins/tree/master/Lamp)** - Simple way to control the lamp on your phone
 
 
 #### Contributors
