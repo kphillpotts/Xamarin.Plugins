@@ -116,7 +116,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Properties\AppManifest.xml" />
     <None Include="Properties\WMAppManifest.xml">
       <SubType>Designer</SubType>
@@ -161,10 +163,12 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Lamp.Plugin">
+    <Reference Include="Lamp.Plugin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\packages\kphillpotts.Lamp.Plugin.1.0.0.0\lib\wp8\Lamp.Plugin.dll</HintPath>
     </Reference>
-    <Reference Include="Lamp.Plugin.Abstractions">
+    <Reference Include="Lamp.Plugin.Abstractions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\packages\kphillpotts.Lamp.Plugin.1.0.0.0\lib\wp8\Lamp.Plugin.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Phone.Controls.Toolkit">

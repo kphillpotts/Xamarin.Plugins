@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using Lamp.Plugin.Abstractions;
 using System;
 
@@ -14,7 +15,7 @@ namespace Lamp.Plugin
       /// </summary>
       public void TurnOn()
       {
-          throw new NotImplementedException();
+          Debug.WriteLine("Lamp not supported on Windows Store apps.");
       }
 
       /// <summary>
@@ -22,7 +23,7 @@ namespace Lamp.Plugin
       /// </summary>
       public void TurnOff()
       {
-          throw new NotImplementedException();
+          Debug.WriteLine("Lamp not supported on Windows Store apps.");
       }
   }
 }
