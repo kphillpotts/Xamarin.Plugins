@@ -165,11 +165,13 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Lamp.Plugin">
-      <HintPath>..\..\packages\kphillpotts.Lamp.Plugin.1.0.0.0\lib\wp8\Lamp.Plugin.dll</HintPath>
+    <Reference Include="Lamp.Plugin, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\kphillpotts.Lamp.Plugin.1.0.0.1\lib\wp8\Lamp.Plugin.dll</HintPath>
     </Reference>
-    <Reference Include="Lamp.Plugin.Abstractions">
-      <HintPath>..\..\packages\kphillpotts.Lamp.Plugin.1.0.0.0\lib\wp8\Lamp.Plugin.Abstractions.dll</HintPath>
+    <Reference Include="Lamp.Plugin.Abstractions, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\kphillpotts.Lamp.Plugin.1.0.0.1\lib\wp8\Lamp.Plugin.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Phone.Controls.Toolkit">
       <HintPath>..\..\packages\WPtoolkit.4.2013.08.16\lib\wp8\Microsoft.Phone.Controls.Toolkit.dll</HintPath>

@@ -50,11 +50,13 @@
     <AndroidLinkMode>SdkOnly</AndroidLinkMode>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Lamp.Plugin">
-      <HintPath>..\..\packages\kphillpotts.Lamp.Plugin.1.0.0.0\lib\MonoAndroid10\Lamp.Plugin.dll</HintPath>
+    <Reference Include="Lamp.Plugin, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\kphillpotts.Lamp.Plugin.1.0.0.1\lib\MonoAndroid10\Lamp.Plugin.dll</HintPath>
     </Reference>
-    <Reference Include="Lamp.Plugin.Abstractions">
-      <HintPath>..\..\packages\kphillpotts.Lamp.Plugin.1.0.0.0\lib\MonoAndroid10\Lamp.Plugin.Abstractions.dll</HintPath>
+    <Reference Include="Lamp.Plugin.Abstractions, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\kphillpotts.Lamp.Plugin.1.0.0.1\lib\MonoAndroid10\Lamp.Plugin.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Android" />
     <Reference Include="mscorlib" />
