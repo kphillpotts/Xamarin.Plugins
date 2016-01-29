@@ -34,6 +34,11 @@ namespace Lamp.Plugin
           }
           else
           {
+			  if (!captureDevice.TorchAvailable)
+			  {
+				  Debug.WriteLine("The torch is not available on this device (captureDevice.TorchAvailable is false)");
+				  return;
+			  }
               if (captureDevice.TorchMode != AVCaptureTorchMode.On)
               {
                   captureDevice.TorchMode = AVCaptureTorchMode.On;
