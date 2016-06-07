@@ -59,9 +59,7 @@ namespace Lamp.Plugin
               p.FlashMode = flashMode;
               camera.SetParameters(p);
           }
-
-          camera.StartPreview();
-
+		
           // nexus 5 fix here: http://stackoverflow.com/questions/21417332/nexus-5-4-4-2-flashlight-led-not-turning-on
           try
           {
@@ -72,6 +70,8 @@ namespace Lamp.Plugin
               // Ignore
           }
 
+			//Changed order of SetPreviewTexture and StartPreview. It seems Samsung Galaxy XX puts the camera in bad otherwise.
+		  camera.StartPreview();
       }
 
 
@@ -105,6 +105,9 @@ namespace Lamp.Plugin
               p.FlashMode = flashMode;
               camera.SetParameters(p);
           }
+
+			//Some phones do not switch off flash, or behave badly when not preview is stopped.
+			camera.StopPreview ();
       }
   }
 }
