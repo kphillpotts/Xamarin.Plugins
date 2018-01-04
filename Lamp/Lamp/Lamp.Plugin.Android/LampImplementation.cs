@@ -105,6 +105,12 @@ namespace Lamp.Plugin
               p.FlashMode = flashMode;
               camera.SetParameters(p);
           }
+          
+          // sstevan: Fix "getParameters failed (empty parameters)" issue
+          camera.StopPreview();
+          camera.Release();
+          camera = null;
+          
       }
   }
 }
