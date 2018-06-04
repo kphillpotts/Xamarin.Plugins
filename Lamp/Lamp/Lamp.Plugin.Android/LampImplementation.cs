@@ -89,21 +89,31 @@ namespace Lamp.Plugin
               return;
           }
 
-          var p = camera.GetParameters();
-          var supportedFlashModes = p.SupportedFlashModes;
-
-          if (supportedFlashModes == null)
-              supportedFlashModes = new List<string>();
-
-          var flashMode = string.Empty;
-
-          if (supportedFlashModes.Contains(Android.Hardware.Camera.Parameters.FlashModeTorch))
-              flashMode = Android.Hardware.Camera.Parameters.FlashModeOff;
-
-          if (!string.IsNullOrEmpty(flashMode))
+          try
           {
-              p.FlashMode = flashMode;
-              camera.SetParameters(p);
+              var p = camera.GetParameters();
+              var supportedFlashModes = p.SupportedFlashModes;
+
+              if (supportedFlashModes == null)
+                  supportedFlashModes = new List<string>();
+
+              var flashMode = string.Empty;
+
+              if (supportedFlashModes.Contains(Android.Hardware.Camera.Parameters.FlashModeTorch))
+                  flashMode = Android.Hardware.Camera.Parameters.FlashModeOff;
+
+              if (!string.IsNullOrEmpty(flashMode))
+              {
+                  p.FlashMode = flashMode;
+                  camera.SetParameters(p);
+              } 
+          }
+          finally
+          {
+              camera?.StopPreview();
+              camera?.Release();
+              camera?.Dispose();
+              camera = null;
           }
       }
   }
